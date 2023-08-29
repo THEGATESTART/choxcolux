@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.main-body {
+    width: 1430px;
+    height: 100vh;
+    margin: 3rem 0;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 15px;
+}
+
+.navbar-nav {
+    margin-left: 50rem;
+}
