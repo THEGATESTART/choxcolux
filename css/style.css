@@ -10,6 +10,9 @@ body {
     justify-content: center;
     background-color: #ffffff;
 }
+.layout-padding {
+    padding: 6rem 0;
+}
 
 .main-body {
     width: 100%;
@@ -37,6 +40,7 @@ body {
 }
 /* End Navbar */
 
+/* Start section slide */
 .section-slide {
     display: flex;
     justify-content: center;
@@ -67,7 +71,7 @@ body {
     z-index: 3;
 }
 .section-slide .detail-box {
-    margin-left: 2rem;
+    margin-left: 3rem;
     color: #ffffff;
 }
 .detail-box h1 {
@@ -93,7 +97,7 @@ body {
     width: 5rem;
 }
 .section-slide .img-box img {
-    width: 100%;
+    width: 90%;
 }
 .section-slide::after {
     content: "";
@@ -120,15 +124,54 @@ body {
     position: unset;
     width: 3.5rem;
     height: 3.5rem;
-    font-size: 2.5rem;
     opacity: 1;
     margin: .2rem 0;
+    color: #a04120;
     background-color: #ffffff;
 }
-.carousel-control-prev-icon {
+.fa-arrow-left,
+.fa-arrow-right {
+    font-size: 1.2rem;
     color: #a04120;
 }
-.carousel-control-next:hover, 
-.carousel-control-prev:hover {
+.fa-arrow-left:hover, 
+.fa-arrow-right:hover {
     color: #46200b;
 }
+/* End section slide */
+
+/* Start about section */
+.about-section .detail-box p {
+    font-size: 1.2rem;
+}
+.about-section .detail-box a {
+    color: #46200b;
+}
+.about-section .detail-box span {
+    margin-left: 0;
+    margin-right: .5rem;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
