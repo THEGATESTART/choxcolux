@@ -157,17 +157,103 @@
           <!-- Slider main container -->
           <div class="swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/chocolate1.png" alt=""></div>
-              <div class="swiper-slide"><img src="images/chocolate2.png" alt=""></div>
-              <div class="swiper-slide"><img src="images/chocolate3.png" alt=""></div>
-              <div class="swiper-slide"><img src="images/chocolate1.png" alt=""></div>
-              <div class="swiper-slide"><img src="images/chocolate2.png" alt=""></div>
-              <div class="swiper-slide"><img src="images/chocolate3.png" alt=""></div>
-              <div class="swiper-slide"><img src="images/chocolate1.png" alt=""></div>
-              <div class="swiper-slide"><img src="images/chocolate2.png" alt=""></div>
-              <div class="swiper-slide"><img src="images/chocolate3.png" alt=""></div>
+              <div class="swiper-slide">
+                <div class="image-box">
+                  <img src="images/chocolate1.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h1>YUMMY <span>CHOCOLATE</span></h1>
+                  <h1>$5.0</h1>
+                  <a href="#">BUY NOW</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-box">
+                  <img src="images/chocolate2.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h1>YUMMY <span>CHOCOLATE</span></h1>
+                  <h1>$5.0</h1>
+                  <a href="#">BUY NOW</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-box">
+                  <img src="images/chocolate3.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h1>YUMMY <span>CHOCOLATE</span></h1>
+                  <h1>$5.0</h1>
+                  <a href="#">BUY NOW</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-box">
+                  <img src="images/chocolate1.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h1>YUMMY <span>CHOCOLATE</span></h1>
+                  <h1>$5.0</h1>
+                  <a href="#">BUY NOW</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-box">
+                  <img src="images/chocolate2.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h1>YUMMY <span>CHOCOLATE</span></h1>
+                  <h1>$5.0</h1>
+                  <a href="#">BUY NOW</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-box">
+                  <img src="images/chocolate3.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h1>YUMMY <span>CHOCOLATE</span></h1>
+                  <h1>$5.0</h1>
+                  <a href="#">BUY NOW</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-box">
+                  <img src="images/chocolate1.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h1>YUMMY <span>CHOCOLATE</span></h1>
+                  <h1>$5.0</h1>
+                  <a href="#">BUY NOW</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-box">
+                  <img src="images/chocolate2.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h1>YUMMY <span>CHOCOLATE</span></h1>
+                  <h1>$5.0</h1>
+                  <a href="#">BUY NOW</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-box">
+                  <img src="images/chocolate3.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h1>YUMMY <span>CHOCOLATE</span></h1>
+                  <h1>$5.0</h1>
+                  <a href="#">BUY NOW</a>
+                </div>
+              </div>
+              
             </div>
-            
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-btn">
+            <div class="swiper-button-prev swiper-button-brown"></div>
+            <div class="swiper-button-next swiper-button-brown"></div>
           </div>
         </div>
       </section>
@@ -189,11 +275,19 @@
     <script>
       var swiper = new Swiper('.swiper', {
         slidesPerView: 3,
-        spaceBetween: 30,
+        spaceBetween: 25,
+        loop: true,
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
         },
+        autoplay: {
+          delay: 3000,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
       });
     </script>
   </body>

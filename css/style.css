@@ -151,16 +151,39 @@ body {
     margin-left: 0;
     margin-right: .5rem;
 }
+/* End about section */
 
-.swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-  .swiper-slide {
+/* Start product section */
+.container {
+    position: relative;
+    padding-bottom: 3rem;
+}
+.head-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    color: #000000;
+}
+.head-content h1{
+    font-size: 3.5rem;
+    font-family: "Lobster", sans-serif;
+}
+.head-content p {
+    font-size: 1.3rem;
+}
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-  
+    border: 1px solid #46200b;
+    height: 25rem !important;
+}
+.swiper-slide .image-box {
+    padding: 1.5rem;
+    height: 15.5rem;
+
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -174,4 +197,44 @@ body {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
+}
+.swiper-slide .detail-box {
+    background-color: #46200b;
+    padding: 1.5rem 0;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+.swiper-slide .detail-box h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: sans-serif;
+}
+.swiper-slide .detail-box h1 span {
+    font-size: 1.5rem;
+    color: #a04120;
+}
+.swiper-slide a {
+    font-family: sans-serif;
+}
+.swiper-slide:hover .detail-box {
+    opacity: 1; 
+}
+.swiper-btn {
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.swiper-button-next {
+    right: calc(10% - 100px) !important;
+}
+.swiper-button-prev {
+    left: calc(10% - 100px) !important;
+}
+.swiper-button-brown {
+    color: #46200b !important;
+    padding: 3rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
