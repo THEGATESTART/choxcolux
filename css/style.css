@@ -11,7 +11,7 @@ body {
     background-color: #ffffff;
 }
 .layout-padding {
-    padding: 6rem 0;
+    padding-top: 6rem;
 }
 
 .main-body {
@@ -223,7 +223,7 @@ body {
 }
 .swiper-btn {
     position: absolute;
-    bottom: -1.5rem;
+    bottom: -.5rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -384,3 +384,63 @@ body {
 .fa-arrow-right:hover {
     color: #46200b;
 }
+
+/* Start contact section */
+.contact-section .head-content {
+    display: flex;
+    align-items: start;
+    margin-left: 13.5rem;
+}
+.contact-section button {
+    background-color: #46200b;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: .5rem 2rem;
+    margin-top: 1.5rem;
+    margin-left: 13.5rem;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+.contact-section button:hover {
+    font-weight: 600;
+    color: #46200b;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+/* End contact section */
+
+/* Start footer contact */
+.footer-section .footer-contain {
+    padding-top: 2.5rem;
+    background-color: #000000;
+}
+.footer-section .send-mail {
+    padding: 1rem 1.8rem;
+    background-color: #a04120;
+    cursor: pointer;
+}
+.footer-section .send-mail i {
+    color: #ffffff;
+}
+.footer-section .inform-social-row {
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.footer-section .icon-box {
+    display: flex;
+    width: 100%;
+}
+.footer-section .icon-box i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .5rem;
+    width: 65px;
+    height: 65px;
+    color: #ffffff;
+    padding: 1.4rem;
+    border: 1.5px solid #ffffff;
+    cursor: pointer;
+}
+
+
