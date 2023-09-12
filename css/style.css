@@ -82,7 +82,7 @@ body {
     font-size: 8rem;
 }
 .detail-box a {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: "Lobster", sans-serif;
     color: #ffffff;
     text-decoration: none;
@@ -216,6 +216,7 @@ body {
 }
 .swiper-slide a {
     font-family: sans-serif;
+    font-size: 1.2rem;
 }
 .swiper-slide:hover .detail-box {
     opacity: 1; 
@@ -228,13 +229,158 @@ body {
     z-index: 1;
 }
 .swiper-button-next {
-    right: calc(10% - 100px) !important;
+    right: calc(10% - 75px) !important;
 }
 .swiper-button-prev {
-    left: calc(10% - 100px) !important;
+    left: calc(10% - 75px) !important;
+}
+.swiper-button-next::after, .swiper-button-prev:after {
+    font-size: 1.5rem !important;
+    font-weight: 800;
 }
 .swiper-button-brown {
     color: #46200b !important;
-    padding: 3rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 20px;
+    transition: all .3s ease-in-out;
+}
+.swiper-button-brown:hover {
+    color: #ffffff !important;
+    background-color: #46200b;
+}
+/* End product section */
+
+/* Start offer section */
+.offer-section .container {
+    border: 1px solid #46200b;
+    justify-content: flex-start;
+    height: 35rem;
+    position: relative;
+}
+.offer-section .head-content {
+    margin-top: 3.5rem;
+}
+.offer-section .head-content h2 {
+    font-family: "Lobster", sans-serif;
+}
+.offer-section .head-content button {
+    background-color: #46200b;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: .5rem 2rem;
+    margin-top: 1.5rem;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+.offer-section .head-content button:hover {
+    font-weight: 600;
+    color: #46200b;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+.offer-section .img-box {
+    display: flex;
+    justify-content: center;
+}
+.offer-section .img-box img {
+    position: absolute;
+    top: 20rem;
+}
+.offer-section .see-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+.see-more a {
+    font-family: "Lobster", sans-serif;
+    text-decoration: none;
+    color: #46200b;
+    font-size: 1.2rem;
+}
+.see-more a:hover {
+    color: #46200b;
+}
+.see-more a span img {
+    width: 4rem;
+}
+/* End offer section */
+
+/* Start testimonails */
+.testimonials-section .img-box img {
+    width: 100%;
+}
+.testimonials-section .testi-container {
+    background-image: url(../images/client-bg.png);
+    background-size: 90% 100%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 5rem 0 15rem 0;
+}
+.testimonials-section .head-content {
+    color: #fff;
+}
+.testimonials-section .box {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 7rem 0 .5rem;
+}
+.testimonials-section .box .img-box {
+    position: relative;
+    width: 175px;
+    min-width: 175px;
+    margin-right: 1.5rem;
+}
+.testimonials-section .box .img-box::before {
+    content: "";
+    position: absolute;
+    left: -1.5rem;
+    bottom: -1.5rem;
+    width: 175px;
+    height: 175px;
+    background-color: #fff;
+    box-shadow: 0 0 7px 0 rgba(0,0,0,.1);
+}
+.testimonials-section .box .img-box img {
+    position: relative;
+    z-index: 3;
+}
+.testimonials-section .detail-box h4 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.testimonials-section .detail-box p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.testimonials-section .detail-box i {
+    font-size: 2rem;
+}
+.testimonials-section .carousel-btn-box {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+.carousel-btn-box .carousel-control-prev,
+.carousel-btn-box .carousel-control-next {
+    position: unset;
+    width: 3.5rem;
+    height: 3.5rem;
+    opacity: 1;
+    margin: .2rem 0;
+    color: #a04120;
+    background-color: #ffffff;
+}
+.fa-arrow-left,
+.fa-arrow-right {
+    font-size: 1.2rem;
+    color: #a04120;
+}
+.fa-arrow-left:hover, 
+.fa-arrow-right:hover {
+    color: #46200b;
 }
