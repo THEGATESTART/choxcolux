@@ -1,8 +1,8 @@
-.main-body {
-    margin: 0;
-}
+@media only screen and (max-width: 576px) {
+    .main-body {
+        margin: 0;
+    }    
 
-@media (max-width: 576px) {
     /*  Navbar */
     .navbar-brand {
         font-size: 2rem !important;
@@ -57,7 +57,7 @@
     }
     /* Section slide */
 
-    /* Start section about */
+    /* Section about */
     .about-section {
         margin-top: 17rem;
     }
@@ -67,9 +67,9 @@
     .about-section .img-box img {
         width: 100%;
     }
-    /* End section about */
+    /* End about */
 
-    /* Start seciton prooduct */
+    /* Seciton prooduct */
     .product-section .container {
         padding-bottom: 1rem;
     }
@@ -80,11 +80,7 @@
         text-align: center;
     }
     .swiper-btn {
-        position: absolute;
         bottom: -2rem;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
     }
     .swiper-button-next {
         right: calc(10% - 55px) !important;
@@ -97,20 +93,13 @@
         font-weight: 800;
     }
     .swiper-button-brown {
-        color: #46200b !important;
         padding: 1.5rem;
-        box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 20px;
-        transition: all .3s ease-in-out;
-    }
-    .swiper-button-brown:hover {
-        color: #ffffff !important;
-        background-color: #46200b;
     }
     /* End product section */
 
     /* Start offer section */
     .offer-section {
-       padding: 7rem 1.5rem 0 1.5rem;
+       padding: 7rem 1rem 0 1rem;
     }
     .offer-section .container {
         height: 25rem;
@@ -134,9 +123,10 @@
     }
     .testimonials-section .testi-container {
         background-size: 100% 100%;
+        padding: 3rem 0 8rem 0;
+        height: 110%;
     }
     .testimonials-section .box {
-        align-items: center;
         flex-direction: column;
         padding: 0;
     }
@@ -151,7 +141,7 @@
         height: 115px;
     }
     .testimonials-section .detail-box {
-        margin-top: 3rem;
+        margin-top: 1rem;
         width: 100%;
     }
     .testimonials-section .carousel-btn-box {
@@ -162,6 +152,129 @@
     }
     .carousel-btn-box .carousel-control-prev,
     .carousel-btn-box .carousel-control-next {
-        margin: 0 .5rem;
+        margin: .3rem .5rem;
+    }
+    /* End testimonails */
+
+    /* Contact us */
+    .contact-section .head-content {
+        margin: 0;
+        margin-top: 4rem;
+        margin-bottom: 1rem;        
+    }
+    .contact-section iframe {
+        margin-top: 2rem;
+        width: 100%;
+    }
+    /* End contact us */
+
+    /* Footer */
+    .footer-section .inform-social-row .icon-box {
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+    .footer-section .footer-content {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .footer-content .insta-box {
+        flex-direction: column;
+    }
+    .footer-content .insta-box .img-box {
+        margin-bottom: .5rem;
+    }
+    /* End footer */
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-area {
+        height: calc(100vh - 450px);
+    }
+
+    /* Slide */
+    .section-slide .detail-box {
+        margin-left: 4rem;
+    }
+    .detail-box h1 {
+        font-size: 3rem;
+    }
+    .detail-box h1 span {
+        font-size: 6rem;
+    }
+    .section-slide::after {
+        display: none;
+    }
+    /* Section slide */
+
+    /* About */
+    .about-section .detail-box .head-content h1 {
+        font-size: 2.2rem;
+    }
+    .about-section .img-box img {
+        width: 100%;
+    }
+    /* End about */
+
+    /* Product */
+    .head-content h1 {
+        font-size: 2.2rem;
+    }
+    .product-section .head-content p {
+        text-align: center;
+    }
+    /* End Product */
+
+    /* Offer */
+    .offer-section {
+        padding: 1rem;
+    }
+
+    /* Testimonial */
+    .testimonials-section .img-box .cup-choc {
+        display: none;
+    }
+    .testimonials-section .testi-container {
+        background-size: 90% 100%;
+        padding: 5rem 0 15rem 0;
+    }
+    .testimonials-section .box {
+        padding: 0 7rem 0 .5rem;
+    }
+    .testimonials-section .box .img-box::before {
+        height: 135px;
+    }
+    .testimonials-section .detail-box {
+        margin-top: 2rem;
+    }
+    .testimonials-section .carousel-btn-box {
+        flex-direction: row;
+        top: 100%;
+        left: 63%;
+        transform: translate(-50%, -50%);
+    }
+    .carousel-btn-box .carousel-control-prev,
+    .carousel-btn-box .carousel-control-next {
+        margin: .3rem .5rem;
+    }
+    /* End testimonails */
+    
+    /* Contact */
+    .contact-section .head-content {
+        display: flex;
+        align-items: start;
+        margin-left: 3.8rem;
+    }
+    .contact-section iframe {
+        width: 100%;
+        height: 80%;
+    }
+    /* End Contact */
+
+    /* Footer */
+    .footer-section .footer-content {
+        margin-bottom: 1.5rem;
+    }
+    .footer-section .footer-content .contact-footer i {
+        margin-bottom: 1.5rem;
     }
 }

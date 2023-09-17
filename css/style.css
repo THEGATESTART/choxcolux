@@ -62,7 +62,7 @@ body {
     width: 75%;
     height: 100%;
     background-image: url("../images/slider-bg1.png");
-    background-size: 100% 100%;
+    background-size: 90% 100%;
     z-index: 2;
 }
 .section-slide #carouselExampleControls {
@@ -150,6 +150,10 @@ body {
 .about-section .detail-box span {
     margin-left: 0;
     margin-right: .5rem;
+}
+.about-section .img-box {
+    display: flex;
+    justify-content: end;
 }
 /* End about section */
 
@@ -315,7 +319,7 @@ body {
     background-position: bottom right;
     background-repeat: no-repeat;
     color: #fff;
-    padding: 5rem 0 15rem 0;
+    padding: 5rem 0 8rem 0;
 }
 .testimonials-section .head-content {
     color: #fff;
@@ -348,6 +352,7 @@ body {
 .testimonials-section .detail-box h4 {
     font-size: 2rem;
     font-weight: 500;
+    margin-top: 2.5rem;
 }
 .testimonials-section .detail-box p {
     font-size: 1rem;
@@ -397,7 +402,6 @@ body {
     font-size: 1.2rem;
     padding: .5rem 2rem;
     margin-top: 1.5rem;
-    margin-left: 13.5rem;
     border: none;
     transition: all .3s ease-in-out;
 }
@@ -493,4 +497,14 @@ body {
 }
 .contact-footer i span {
     margin-left: 1.5rem;
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+}
+.copyright p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
 }
