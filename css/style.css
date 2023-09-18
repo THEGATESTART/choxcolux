@@ -29,6 +29,11 @@ body {
 }
 
 /*  Navbar */
+.navbar-light .navbar-toggler {
+    font-size: 3rem;
+    color: #46200b !important;
+    border: none !important;
+}
 .navbar-brand {
     font-size: 2.2rem !important;
     font-family: "Lobster", sans-serif;
@@ -59,10 +64,10 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 75%;
+    width: 60%;
     height: 100%;
     background-image: url("../images/slider-bg1.png");
-    background-size: 90% 100%;
+    background-size: 100% 100%;
     z-index: 2;
 }
 .section-slide #carouselExampleControls {

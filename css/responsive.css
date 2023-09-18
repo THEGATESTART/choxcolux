@@ -2,6 +2,9 @@
     .main-body {
         margin: 0;
     }    
+    .hero-area {
+        height: auto;
+    }    
 
     /*  Navbar */
     .navbar-brand {
@@ -59,7 +62,7 @@
 
     /* Section about */
     .about-section {
-        margin-top: 17rem;
+        margin-top: 7rem;
     }
     .about-section .img-box {
         margin-top: 3rem;
@@ -188,10 +191,16 @@
 
 @media only screen and (min-width: 768px) {
     .hero-area {
-        height: calc(100vh - 450px);
-    }
+        height: auto;
+    }   
 
     /* Slide */
+    .section-slide {
+        padding: 5rem 0;
+    }
+    .section-slide::before {
+        width: 80%;
+    }
     .section-slide .detail-box {
         margin-left: 4rem;
     }
@@ -202,7 +211,7 @@
         font-size: 6rem;
     }
     .section-slide::after {
-        display: none;
+        opacity: 0;
     }
     /* Section slide */
 
@@ -227,6 +236,7 @@
     /* Offer */
     .offer-section {
         padding: 1rem;
+        margin-top: 6rem;
     }
 
     /* Testimonial */
@@ -249,11 +259,11 @@
     .testimonials-section .carousel-btn-box {
         flex-direction: row;
         top: 100%;
-        left: 63%;
-        transform: translate(-50%, -50%);
+        left: 60%;
+        transform: translateX(-50%);
     }
-    .carousel-btn-box .carousel-control-prev,
-    .carousel-btn-box .carousel-control-next {
+    .testimonials-section .carousel-btn-box .carousel-control-prev,
+    .testimonials-section .carousel-btn-box .carousel-control-next {
         margin: .3rem .5rem;
     }
     /* End testimonails */
@@ -276,5 +286,44 @@
     }
     .footer-section .footer-content .contact-footer i {
         margin-bottom: 1.5rem;
+    }
+    /* End footer */
+
+    @media only screen and (min-width: 991px) {
+        .hero-area {
+            height: auto;
+        }
+        
+        /* Slide */
+        .section-slide {
+            padding: 15.5rem 0;
+        }
+        .section-slide::before {
+            width: 70%;
+        }
+        .section-slide .detail-box {
+            margin-left: 0;
+        }
+        .detail-box h1 {
+            font-size: 5rem;
+        }
+        .detail-box h1 span {
+            font-size: 8rem;
+        }
+        .section-slide .img-box img {
+            width: 100%;
+        }
+        .section-slide::after {
+            opacity: 1;
+            right: 9rem;
+            height: 39rem;
+        }
+        /* End Slide */
+
+        /* Testimonial */
+        .testimonials-section .img-box .cup-choc {
+            display: block;
+        }
+        /* End testimonails */
     }
 }
