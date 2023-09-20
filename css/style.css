@@ -30,7 +30,7 @@ body {
 
 /*  Navbar */
 .navbar-light .navbar-toggler {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #46200b !important;
     border: none !important;
 }
@@ -109,7 +109,7 @@ body {
     position: absolute;
     top: 25px;
     right: 1rem;
-    width: 55rem;
+    width: 45rem;
     height: 40rem;
     background-image: url("../images/slider-bg2.png");
     background-size: 100% 100%;
