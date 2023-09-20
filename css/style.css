@@ -43,6 +43,9 @@ body {
     padding: 0 1.5rem;
     font-size: 1.3rem;
 }
+.nav-item i {
+    cursor: pointer;
+}
 /* End Navbar */
 
 /* Start section slide */
