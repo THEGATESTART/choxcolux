@@ -364,7 +364,7 @@
         width: 70%;
     }
     .section-slide .detail-box {
-        margin-left: -10rem;
+        margin-left: auto;
     }
     .detail-box h1 {
         font-size: 6rem;
