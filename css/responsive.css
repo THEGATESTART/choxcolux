@@ -335,15 +335,12 @@
     .testimonials-section .img-box .cup-choc {
         display: block;
     }
-    .testimonials-section .detail-box h4 {
-        font-size: 2.5rem;
-    }
     .testimonials-section .detail-box p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .testimonials-section .carousel-btn-box {
         position: absolute;
-        top: 55%;
+        top: 45%;
         left: auto;
         right: 0;
         display: flex;
@@ -361,7 +358,7 @@
     
     /* Slide */
     .section-slide {
-        padding: 13.5rem 0;
+        padding: 10.5rem 0;
     }
     .section-slide::before {
         width: 70%;
@@ -370,10 +367,10 @@
         margin-left: -10rem;
     }
     .detail-box h1 {
-        font-size: 8rem;
+        font-size: 6rem;
     }
     .detail-box h1 span {
-        font-size: 13rem;
+        font-size: 10rem;
     }
     .detail-box a {
         font-size: 2rem;
