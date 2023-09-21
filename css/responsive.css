@@ -358,7 +358,7 @@
     
     /* Slide */
     .section-slide {
-        padding: 10.5rem 0;
+        padding: 4.5rem 0;
     }
     .section-slide::before {
         width: 70%;
@@ -380,7 +380,7 @@
         margin-left: .5rem;
     }
     .section-slide .img-box img {
-        width: 85%;
+        width: 80%;
     }
     .section-slide::after {
         opacity: 1;
